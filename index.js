@@ -67,6 +67,10 @@ const myAccount = new Account('billybob');
 
 console.log('Starting Balance:', myAccount.balance);
 
+const t0 = new Withdrawal(69.00, myAccount);
+t0.commit();
+console.log('Balance After t0:', myAccount.balance);
+
 const t1 = new Deposit(120.00, myAccount);
 t1.commit();
 console.log('Balance After t1:', myAccount.balance);
